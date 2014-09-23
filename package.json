@@ -12,11 +12,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/johnhamelink/hubot-whiteboardcleaner.git"
+    "url": "git://github.com/hubot-scripts/hubot-whiteboardcleaner.git"
   },
 
   "bugs": {
-    "url": "https://github.com/johnhamelink/hubot-whiteboardcleaner/issues"
+    "url": "https://github.com/hubot-scripts/hubot-whiteboardcleaner/issues"
   },
 
   "dependencies": {
