@@ -32,7 +32,7 @@ module.exports = (robot) ->
 
   # Upload the downloaded image to the API
   uploadFile = (file, msg) ->
-    curl = "curl -q --form flowFilename=#{file['name']} --form file=@#{file['path']} #{requestApi}"
+    curl = "curl #{requestApi} -H 'Origin: http://api.o2b.ru' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: en-GB,en;q=0.8,en-US;q=0.6' -H 'CSP: active' -H 'Cookie: sid=\"ZTk2OWI4NTJkMDNkNDRmNjhlNzRhNjQ2NmQwZWU0YjM=|143257512 1|4911e949a0ad91236047b91b92d67bb58f8692bd\"' -H 'Connection: keep-alive' -H 'Pragma: no-cache' -H 'User-Agent: Mozill a/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36' -- form flowChunkNumber=1 --form flowFilename=#{file['name']} --form file=@#{file['path']}"
     child.exec curl, (err, stdout, stderr) ->
       throw err if err
       json = JSON.parse stdout

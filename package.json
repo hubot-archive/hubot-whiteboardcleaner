@@ -1,7 +1,7 @@
 {
   "name": "hubot-whiteboardcleaner",
   "description": "Automatically optimise photos of your whiteboard",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "John Hamelink <john@farmer.io>",
   "license": "MIT",
   "keywords": [
